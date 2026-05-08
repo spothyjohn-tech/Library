@@ -11,7 +11,7 @@ CREATE TABLE Books (
 CREATE TABLE Users (
     ID TEXT PRIMARY KEY,
     "Name" TEXT NOT NULL,
-    Email TEXT NOT NULL,
+    Email TEXT NOT NULL UNIQUE,
     "Password" TEXT NOT NULL,
     "Role" TEXT NOT NULL CHECK ("Role" IN ('admin', 'user')),
     RegistrationDate DATE NOT NULL  
