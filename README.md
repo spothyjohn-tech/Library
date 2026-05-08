@@ -69,7 +69,7 @@ curl -X GET "http://localhost:8080/books?author=Alan&status=Available"
 ```bash
 curl -X POST http://localhost:8080/users \
      -H "Authorization: Bearer <ВАШ_ТОКЕН>" \
-     -d '{"name": "Ivan Ivanov", "email": "ivan@example.com", "password": "securepassword"}'
+     -d '{"name": "Ivan Ivanov", "email": "ivan@example.com", "password": "securepassword", "role":"user"}'
 ```
 
 ### 5. Выдача книги
